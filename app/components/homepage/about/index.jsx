@@ -30,6 +30,13 @@ function AboutSection() {
             alt="SAI SHARAN"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
+          <Image
+                        src="/portfolio/blur-23.svg"
+                        alt="Hero"
+                        width={1080}
+                        height={200}
+                        className="absolute bottom-0 opacity-80"
+                      />
         </div>
       </div>
     </div>

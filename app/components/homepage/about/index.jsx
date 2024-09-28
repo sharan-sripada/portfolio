@@ -2,9 +2,22 @@
 import Image from "next/image";
 
 import { personalData } from "@/utils/data/personal-data";
-import dynamic from 'next/dynamic';
 
+const CustomImage = ({ src, alt, className, width, height }) => {
+  const imagePath = process.env.NODE_ENV === 'production' 
+    ? `/portfolio${src}` 
+    : src;
 
+  return (
+    <img
+      src={imagePath}
+      alt={alt}
+      className={`rounded-lg transition-all duration-1000 ${className}`}
+      width={width}
+      height={height}
+    />
+  );
+};
 
 function AboutSection() {
   return (
@@ -25,20 +38,20 @@ function AboutSection() {
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
-          <Image
+          {/* <Image
             src="/portfolio/profile.png"
             // width={280}
             // height={280}
             alt="SAI SHARAN"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
-          />
-          <Image
-                        src="/portfolio/profile.png"
-                        alt="Errorhere"
-                        width={1080}
-                        height={200}
-                        className="absolute bottom-0 opacity-80"
-                      />
+          /> */}
+          <CustomImage
+            src="/profile.png"
+            alt="SAI SHARAN Education"
+            className="grayscale hover:grayscale-0 hover:scale-110 cursor-pointer object-cover"
+            width={280}
+            height={280}
+      />
         </div>
       </div>
     </div>

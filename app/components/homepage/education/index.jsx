@@ -12,6 +12,23 @@ const AnimationLottie = dynamic(() => import('../../helper/animation-lottie'), {
   loading: () => <p>Loading...</p>
 });
 
+
+const CustomImage = ({ src, alt, className, width, height }) => {
+  const imagePath = process.env.NODE_ENV === 'production' 
+    ? `/portfolio${src}` 
+    : src;
+
+  return (
+    <img
+      src={imagePath}
+      alt={alt}
+      className={`rounded-lg transition-all duration-1000 ${className}`}
+      width={width}
+      height={height}
+    />
+  );
+};
+
 function Education() {
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
@@ -21,6 +38,13 @@ function Education() {
         width={1572}
         height={795}
         className="absolute top-0 -z-10"
+      />
+      <CustomImage
+        src="/profile.png"
+        alt="SAI SHARAN Education"
+        className="grayscale hover:grayscale-0 hover:scale-110 cursor-pointer object-cover"
+        width={280}
+        height={280}
       />
       <div className="flex justify-center -translate-y-[1px]">
         <div className="w-3/4">

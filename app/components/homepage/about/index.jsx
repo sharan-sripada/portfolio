@@ -1,7 +1,9 @@
 // @flow strict
+import Image from "next/image";
 
 import { personalData } from "@/utils/data/personal-data";
-import Image from "next/image";
+import dynamic from 'next/dynamic';
+
 
 
 function AboutSection() {
@@ -25,14 +27,14 @@ function AboutSection() {
         <div className="flex justify-center order-1 lg:order-2">
           <Image
             src="/portfolio/profile.png"
-            width={280}
-            height={280}
+            // width={280}
+            // height={280}
             alt="SAI SHARAN"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
           <Image
-                        src="/portfolio/blur-23.svg"
-                        alt="Hero"
+                        src="/portfolio/profile.png"
+                        alt="Errorhere"
                         width={1080}
                         height={200}
                         className="absolute bottom-0 opacity-80"

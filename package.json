@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -b master -d build"
+   "deploy": "gh-pages -b main -d out"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",

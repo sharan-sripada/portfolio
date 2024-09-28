@@ -49,8 +49,6 @@ function AboutSection() {
             src="/profile.png"
             alt="SAI SHARAN Education"
             className="grayscale hover:grayscale-0 hover:scale-110 cursor-pointer object-cover"
-            // width={280}
-            // height={280}
       />
         </div>
       </div>

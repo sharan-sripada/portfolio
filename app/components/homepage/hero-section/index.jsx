@@ -1,4 +1,5 @@
 // @flow strict
+"use client";
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
@@ -9,7 +10,7 @@ import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import React from 'react';
-import Typed from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 
 function HeroSection() {
   return (
@@ -31,11 +32,20 @@ function HeroSection() {
             {` , I'm a Professional `}
             <span className=" text-[#16f2b3]">
               {/* {personalData.designation} */}
-              <Typed
-          strings={["Software Developer", "Research Assistant","DevOps Engineer", "Full-Stack Developer", "AI/ML Enthusiast"]}
-          typeSpeed={50}
-          backSpeed={30}
-          loop
+              <TypeAnimation
+          sequence={[
+            'Full Stack Developer', // Typing
+            1000,                  // Pause 1s
+            'DevOps Engineer',      // Typing
+            1000,                  // Pause 1s
+            'Research and Teaching Assistant', // Typing
+            1000,                  // Pause 1s
+            'AI/ML Enthusiast',    // Typing
+            1000,                  // Pause 1s
+          ]}
+          speed={40} // Typing speed
+          wrapper="span" // Use a span for the animation
+          repeat={Infinity} // Loop the sequence
         />
             
             </span>

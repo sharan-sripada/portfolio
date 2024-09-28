@@ -34,12 +34,14 @@ function HeroSection() {
               {/* {personalData.designation} */}
               <TypeAnimation
           sequence={[
+            'Software Developer', // Typing
+            1000,   
+            'Research and Teaching Assistant', // Typing
+            1000, 
             'Full Stack Developer', // Typing
             1000,                  // Pause 1s
             'DevOps Engineer',      // Typing
-            1000,                  // Pause 1s
-            'Research and Teaching Assistant', // Typing
-            1000,                  // Pause 1s
+            1000,                  // Pause 1s        // Pause 1s
             'AI/ML Enthusiast',    // Typing
             1000,                  // Pause 1s
           ]}

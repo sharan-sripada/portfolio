@@ -8,6 +8,8 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import React from 'react';
+import Typed from 'react-typed';
 
 function HeroSection() {
   return (
@@ -27,7 +29,16 @@ function HeroSection() {
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
             {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{personalData.designation}</span>
+            <span className=" text-[#16f2b3]">
+              {/* {personalData.designation} */}
+              <Typed
+          strings={["Software Developer", "Research Assistant","DevOps Engineer", "Full-Stack Developer", "AI/ML Enthusiast"]}
+          typeSpeed={50}
+          backSpeed={30}
+          loop
+        />
+            
+            </span>
             .
           </h1>
 

@@ -2,7 +2,7 @@ export const educations = [
   {
     id: 1,
     title: "Masters Degree",
-    duration: "2023 - Present",
+    duration: "2023 - 2025",
     institution: "University of South Florida",
   },
   {

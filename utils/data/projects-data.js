@@ -7,7 +7,7 @@ export const projectsData = [
     {
         id: 1,
         name: 'University of South Florida',
-        timeline: "2015-Present",
+        timeline: "Dec 2023 - May 2025",
         description: "Developed a Flutter app to assess children's learning rates through innovative data collection and analysis techniques, spearheading the project in the innovative SMART Lab at USF. Successfully tested with 20+ users. Led a machine learning project using LSTM to develop a digital tool for early detection and prediction of psychomotor agitation and aggression in dementia (PAAD), increasing predictive accuracy by 20%. Assisted in teaching Data Mining and Advanced OOPs in C++ to 150+ students, enhancing class performance by 15% through effective mentoring, personalized support, and fostering a collaborative environment.",
         tools: ["Flutter", "Dart", "Jupyter","LSTM", "Python", "TensorFlow", "MATLAB"],
         role: 'Research and Teaching Assistant',
@@ -42,10 +42,10 @@ export const projectsData = [
     },
     {
         id: 4,
-        name: 'Infor Global Solutions',
-        timeline:"Feb 2021 - May 2021",
-        description: "Collaborated with 5 teams to maintain automated test suites using Selenium, reducing bug detection time by 40%.",
-        tools: ["Selenium", "Git", "Python", "Java"],
+        name: 'CURE',
+        timeline:"May 2019 - May 2021",
+        description: "Developed a web-based application using React.js, and Spring Boot to manage and store educational resource.",
+        tools: ["React.js", "Git", "Python", "Java"],
         role: 'Software Engineer Intern',
         location: "Hyderabad, India",
         code: '',
